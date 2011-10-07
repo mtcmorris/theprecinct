@@ -1,3 +1,9 @@
 body {
   font-family: Helvetica;
 }
+
+a {
+  color: #99aa55;
+  text-decoration: none;
+  &:hover { color: #889944; }
+}

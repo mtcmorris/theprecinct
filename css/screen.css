@@ -73,15 +73,35 @@ input, select {
 body {
   font-family: Helvetica; }
 
+a {
+  color: #99aa55;
+  text-decoration: none; }
+  a:hover {
+    color: #889944; }
+
 body {
   background-color: black;
   color: white; }
 
 .wrapper {
   margin: 100px auto;
-  width: 600px; }
+  width: 420px; }
 
 #content {
   text-align: center; }
   #content img {
     margin-bottom: 20px; }
+  #content p {
+    margin-bottom: 50px; }
+
+footer {
+  color: #ddd;
+  font-size: 12px; }
+  footer address {
+    font-style: normal;
+    text-align: right; }
+  footer .contact, footer address {
+    width: 200px;
+    float: left; }
+  footer .contact {
+    margin-right: 20px; }
