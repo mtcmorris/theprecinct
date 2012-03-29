@@ -1,9 +1,57 @@
 @import "reset";
 @import "typography";
+@import "box";
+
+html {
+  height: 100%;
+  background: url("/images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
 
 body {
-  background-color: black;
   color: white;
+}
+
+nav {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 200px;
+  margin-right: 20px;
+  background-color: rgba(0,0,0,0.4);
+  ul li a {
+    display: block;
+    position: relative;
+    padding: 5px 0px 5px 40px;
+    color: #fff;
+    span {
+      background: transparent url(/images/arrow.png) no-repeat top left;
+      position: absolute;
+      opacity: 0;
+      height: 20px;
+      width: 20px;
+      left: -20px;
+      top: 0px;
+      display: block;
+      -webkit-transition: left 0.2s ease-in, opacity 0.1s ease-in;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+        left: 0px;
+      }
+
+    }
+  }
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .wrapper {
@@ -12,7 +60,6 @@ body {
 }
 
 #content {
-  text-align: center;
   img { margin-bottom: 20px; }
   p { margin-bottom: 50px;}
 }

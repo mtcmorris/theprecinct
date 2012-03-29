@@ -1,9 +1,277 @@
+// FONTS
+// --------------------------------------------------
+
+// Font Stacks
+@mixin font-shorthand($size: $baseFontSize, $weight: normal, $lineHeight: $baseLineHeight) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+@mixin font-serif($size: $baseFontSize, $weight: normal, $lineHeight: $baseLineHeight) {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  @include font-shorthand($size, $weight, $lineHeight);
+}
+@mixin font-sans-serif($size: $baseFontSize, $weight: normal, $lineHeight: $baseLineHeight) {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include font-shorthand($size, $weight, $lineHeight);
+}
+@mixin font-family-monospace {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+@mixin font-monospace($size: $baseFontSize, $weight: normal, $lineHeight: $baseLineHeight) {
+  @include font-family-monospace;
+  @include font-shorthand($size, $weight, $lineHeight);
+}
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Links
+$linkColor:             #08c !default;
+$linkColorHover:        darken($linkColor, 15) !default;
+
+// Grays
+$black:                 #000 !default;
+$grayDarker:            #222 !default;
+$grayDark:              #333 !default;
+$gray:                  #555 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #eee !default;
+$white:                 #fff !default;
+
+// Accent colors
+$blue:                  #049cdb !default;
+$blueDark:              #0064cd !default;
+$green:                 #46a546 !default;
+$red:                   #9d261d !default;
+$yellow:                #ffc40d !default;
+$orange:                #f89406 !default;
+$pink:                  #c3325f !default;
+$purple:                #7a43b6 !default;
+
+// Typography
+$baseFontSize:          13px !default;
+$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseLineHeight:        18px !default;
+
+// TYPOGRAPHY
+// Headings, body text, lists, code, and more for a versatile and durable typography system
+// ----------------------------------------------------------------------------------------
+
+
+// BODY TEXT
+// ---------
+
+p {
+  margin: 0 0 $baseLineHeight / 2;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  small {
+    font-size: $baseFontSize - 2;
+    color: $grayLight;
+  }
+}
+.lead {
+  margin-bottom: $baseLineHeight;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: $baseLineHeight * 1.5;
+}
+
+// HEADINGS
+// --------
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: $grayDark;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  small {
+    font-weight: normal;
+    color: $grayLight;
+  }
+}
+h1 {
+  font-size: 30px;
+  line-height: $baseLineHeight * 2;
+  small {
+    font-size: 18px;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: $baseLineHeight * 2;
+  small {
+    font-size: 18px;
+  }
+}
+h3 {
+  line-height: $baseLineHeight * 1.5;
+  font-size: 18px;
+  small {
+    font-size: 14px;
+  }
+}
+h4, h5, h6 {
+  line-height: $baseLineHeight;
+}
+h4 {
+  font-size: 14px;
+  small {
+    font-size: 12px;
+  }
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 11px;
+  color: $grayLight;
+  text-transform: uppercase;
+}
+
+// Page header
+.page-header {
+  padding-bottom: $baseLineHeight - 1;
+  margin: $baseLineHeight 0;
+  border-bottom: 1px solid $grayLighter;
+}
+.page-header h1 {
+  line-height: 1;
+}
+
+
+
+// LISTS
+// -----
+
+// Unordered and Ordered lists
+ul, ol {
+  padding: 0;
+  margin: 0 0 $baseLineHeight / 2 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li {
+  line-height: $baseLineHeight;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+// Description Lists
+dl {
+  margin-bottom: $baseLineHeight;
+}
+dt,
+dd {
+  line-height: $baseLineHeight;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: $baseLineHeight / 2;
+}
+
+// MISC
+// ----
+
+// Emphasis
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+.muted {
+  color: $grayLight;
+}
+
+// Abbreviations and acronyms
+abbr {
+  font-size: 90%;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ddd;
+  cursor: help;
+}
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 $baseLineHeight;
+  border-left: 5px solid $grayLighter;
+  p {
+    margin-bottom: 0;
+    @include font-shorthand(16px,300,$baseLineHeight * 1.25);
+  }
+  small {
+    display: block;
+    line-height: $baseLineHeight;
+    color: $grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    float: right;
+    padding-left: 0;
+    padding-right: 15px;
+    border-left: 0;
+    border-right: 5px solid $grayLighter;
+    p,
+    small {
+      text-align: right;
+    }
+  }
+}
+
+// Quotes
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+// Addresses
+address {
+  display: block;
+  margin-bottom: $baseLineHeight;
+  line-height: $baseLineHeight;
+  font-style: normal;
+}
+
+// Misc
+small {
+  font-size: 100%;
+}
+cite {
+  font-style: normal;
+}
+
+
 body {
   font-family: Helvetica;
 }
 
 a {
-  color: #99aa55;
+  color: #069;
   text-decoration: none;
   &:hover { color: #889944; }
 }
