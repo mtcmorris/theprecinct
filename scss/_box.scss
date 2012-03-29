@@ -1,6 +1,6 @@
-$boxWidth: 300px;
-$boxHeight: 300px;
-$boxDepth: 200px;
+$boxWidth: 800px;
+$boxHeight: 600px;
+$boxDepth: 400px;
 $borders: 2px;
 
 .container {
@@ -68,7 +68,7 @@ $borders: 2px;
 #box .bottom {
   width: $boxWidth - 2 * $borders;
   height: $boxDepth - 2 * $borders;
-  top: ($boxWidth - $boxDepth)/2;
+  top: ($boxWidth - $boxHeight)/2;
   line-height: 96px;
 }
 
