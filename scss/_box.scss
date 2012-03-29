@@ -1,14 +1,13 @@
-$boxWidth: 800px;
-$boxHeight: 600px;
-$boxDepth: 400px;
-$borders: 2px;
+$boxWidth: 700px;
+$boxHeight: 500px;
+$boxDepth: 350px;
+$borders: 0px;
 
 .container {
   width: $boxWidth;
   height: $boxHeight;
   position: relative;
   margin: 0 auto 40px;
-  border: 1px solid #CCC;
   -webkit-perspective: 1200px;
      -moz-perspective: 1200px;
       -ms-perspective: 1200px;
@@ -35,15 +34,8 @@ $borders: 2px;
 #box section {
   display: block;
   position: absolute;
-  border: 2px solid black;
-  line-height: 196px;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-}
+  border: $borders solid black;
 
-#box.panels-backface-invisible figure {
   -webkit-backface-visibility: hidden;
      -moz-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
@@ -73,12 +65,12 @@ $borders: 2px;
 }
 
 
-#box .front  { background: hsla( 000, 100%, 50%, 0.7 ); }
-#box .back   { background: hsla( 160, 100%, 50%, 0.7 ); }
-#box .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
-#box .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
-#box .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
-#box .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
+#box .front  { background-color: #343839; }
+#box .back   { background-color: #4a4f51; }
+#box .right  { background-color: #4e5659; }
+#box .left   { background-color: #474b4d; }
+#box .top    { background-color: #3e4345; }
+#box .bottom { background-color: #373d3f; }
 
 #box .front  {
   -webkit-transform: translateZ( $boxDepth / 2 );
@@ -165,4 +157,18 @@ $borders: 2px;
       -ms-transform: translateZ( -($boxHeight / 2) ) rotateX(   90deg );
        -o-transform: translateZ( -($boxHeight / 2) ) rotateX(   90deg );
           transform: translateZ( -($boxHeight / 2) ) rotateX(   90deg );
+}
+
+.chimney {
+  position: absolute;
+  top: -100px;
+  width: 50px;
+  height: 100px;
+  right: 50px;
+  background-color: #f00;
+  -webkit-transform: translateZ(-50px);
+     -moz-transform: translateZ(-50px);
+      -ms-transform: translateZ(-50px);
+       -o-transform: translateZ(-50px);
+          transform: translateZ(-50px);
 }
