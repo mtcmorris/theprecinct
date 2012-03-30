@@ -1,0 +1,21 @@
+#gallery {
+  li {
+    list-style-type: none;
+    a {
+      width: 100px;
+      height: 100px;
+      float: left;
+      text-align: center;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      img {
+        -webkit-transition: opacity 0.2s ease-in;
+      }
+      &:hover {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,6 @@ $borders: 0px;
   width: $boxWidth;
   height: $boxHeight;
   position: relative;
-  margin: 0 auto 40px;
   -webkit-perspective: 1200px;
      -moz-perspective: 1200px;
       -ms-perspective: 1200px;
@@ -36,11 +35,6 @@ $borders: 0px;
   position: absolute;
   border: $borders solid black;
 
-  -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-       -o-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 #box .front,
@@ -61,11 +55,10 @@ $borders: 0px;
   width: $boxWidth - 2 * $borders;
   height: $boxDepth - 2 * $borders;
   top: ($boxWidth - $boxHeight)/2;
-  line-height: 96px;
 }
 
 
-#box .front  { background-color: #343839; }
+#box .front  { background-color: #111; }
 #box .back   { background-color: #4a4f51; }
 #box .right  { background-color: #4e5659; }
 #box .left   { background-color: #474b4d; }
@@ -106,6 +99,12 @@ $borders: 0px;
       -ms-transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
        -o-transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
           transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
+  -webkit-transform: rotateX(   90deg ) translateZ( 275px );
+     -moz-transform: rotateX(   90deg ) translateZ( 275px );
+      -ms-transform: rotateX(   90deg ) translateZ( 275px );
+       -o-transform: rotateX(   90deg ) translateZ( 275px );
+          transform: rotateX(   90deg ) translateZ( 275px );
+
 }
 #box .bottom {
   -webkit-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
@@ -113,6 +112,12 @@ $borders: 0px;
       -ms-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
        -o-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
           transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
+  -webkit-transform: rotateX(  -90deg ) translateZ( 225px );
+     -moz-transform: rotateX(  -90deg ) translateZ( 225px );
+      -ms-transform: rotateX(  -90deg ) translateZ( 225px );
+       -o-transform: rotateX(  -90deg ) translateZ( 225px );
+          transform: rotateX(  -90deg ) translateZ( 225px );
+
 }
 
 
@@ -157,18 +162,4 @@ $borders: 0px;
       -ms-transform: translateZ( -($boxHeight / 2) ) rotateX(   90deg );
        -o-transform: translateZ( -($boxHeight / 2) ) rotateX(   90deg );
           transform: translateZ( -($boxHeight / 2) ) rotateX(   90deg );
-}
-
-.chimney {
-  position: absolute;
-  top: -100px;
-  width: 50px;
-  height: 100px;
-  right: 50px;
-  background-color: #f00;
-  -webkit-transform: translateZ(-50px);
-     -moz-transform: translateZ(-50px);
-      -ms-transform: translateZ(-50px);
-       -o-transform: translateZ(-50px);
-          transform: translateZ(-50px);
 }

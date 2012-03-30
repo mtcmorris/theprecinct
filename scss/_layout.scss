@@ -1,0 +1,26 @@
+nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+}
+
+
+#social-media {
+  padding: 10px 20px;
+  position: absolute;
+  left: 800px;
+  top: 200px;
+}
+
+
+// The box styling
+div[role=main] {
+  left: 0px;
+  margin-top: 150px;
+  section {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px 40px;
+  }
+}
