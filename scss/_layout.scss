@@ -9,18 +9,29 @@ nav {
 #social-media {
   padding: 10px 20px;
   position: absolute;
-  left: 800px;
-  top: 200px;
+  left: 700px;
+  bottom: 30px;
 }
 
 
 // The box styling
 div[role=main] {
   left: 0px;
-  margin-top: 150px;
+  bottom: 30px;
   section {
     text-align: left;
     box-sizing: border-box;
     padding: 20px 40px;
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  text-indent: 40px;
+  background-color: #000;
+  color: #333333;
+  line-height: 30px;
 }
