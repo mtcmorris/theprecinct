@@ -291,13 +291,13 @@ a {
   background-color: #111; }
 
 #box .back {
-  background-color: #4a4f51; }
+  background-color: #282626; }
 
 #box .right {
-  background-color: #4e5659; }
+  background-color: #2f3031; }
 
 #box .left {
-  background-color: #474b4d; }
+  background-color: #28292d; }
 
 #box .top {
   background-color: #3e4345; }
@@ -588,6 +588,9 @@ h3 {
   text-align: center; }
   #home header img {
     margin-bottom: 30px; }
+#home dl {
+  overflow: hidden;
+  margin-bottom: 0px; }
 #home dd {
   font-size: 13px;
   float: left;
@@ -600,6 +603,20 @@ h3 {
   clear: right;
   font-weight: normal;
   padding: 4px 0px; }
+#home #contact {
+  margin-left: 0px; }
+  #home #contact li {
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 24px;
+    list-style-type: none;
+    background: transparent url(/images/icons.png) no-repeat top left; }
+    #home #contact li address {
+      margin-bottom: 0px; }
+    #home #contact li.tel {
+      background-position: 0px -200px; }
+    #home #contact li.email {
+      background-position: 0px -100px; }
 
 #social-media {
   background-color: #333;
