@@ -429,19 +429,27 @@ footer {
   color: #333333;
   line-height: 30px; }
 
-#gallery li {
-  list-style-type: none; }
-  #gallery li a {
-    width: 100px;
-    height: 100px;
-    float: left;
-    text-align: center;
-    margin-right: 20px;
-    margin-bottom: 20px; }
-    #gallery li a img {
-      -webkit-transition: opacity 0.2s ease-in; }
-    #gallery li a:hover img {
-      opacity: 0.8; }
+#gallery {
+  text-align: center;
+  overflow: hidden;
+  padding: 0px; }
+  #gallery ul {
+    margin-top: 20px; }
+  #gallery li {
+    list-style-type: none; }
+    #gallery li a {
+      width: 100px;
+      height: 100px;
+      float: left;
+      text-align: center;
+      margin-right: 20px;
+      margin-bottom: 20px; }
+      #gallery li a img {
+        -webkit-transition: opacity 0.2s ease-in; }
+      #gallery li a:hover img {
+        opacity: 0.8; }
+  #gallery > img {
+    height: 100%; }
 
 html {
   height: 100%;

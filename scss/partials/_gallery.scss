@@ -1,4 +1,7 @@
 #gallery {
+  ul {
+    margin-top: 20px;
+  }
   li {
     list-style-type: none;
     a {
@@ -18,4 +21,10 @@
       }
     }
   }
+  text-align: center;
+  > img {
+    height: 100%;
+  }
+  overflow: hidden;
+  padding: 0px;
 }
