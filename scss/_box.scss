@@ -1,6 +1,6 @@
 $boxWidth: 700px;
 $boxHeight: 500px;
-$boxDepth: 350px;
+$boxDepth: 700px;
 $borders: 0px;
 
 .container {
@@ -99,11 +99,11 @@ $borders: 0px;
       -ms-transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
        -o-transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
           transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
-  -webkit-transform: rotateX(   90deg ) translateZ( 275px );
-     -moz-transform: rotateX(   90deg ) translateZ( 275px );
-      -ms-transform: rotateX(   90deg ) translateZ( 275px );
-       -o-transform: rotateX(   90deg ) translateZ( 275px );
-          transform: rotateX(   90deg ) translateZ( 275px );
+  -webkit-transform: rotateX(   90deg ) translateZ( 450px );
+     -moz-transform: rotateX(   90deg ) translateZ( 450px );
+      -ms-transform: rotateX(   90deg ) translateZ( 450px );
+       -o-transform: rotateX(   90deg ) translateZ( 450px );
+          transform: rotateX(   90deg ) translateZ( 450px );
 
 }
 #box .bottom {
@@ -112,11 +112,11 @@ $borders: 0px;
       -ms-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
        -o-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
           transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
-  -webkit-transform: rotateX(  -90deg ) translateZ( 225px );
-     -moz-transform: rotateX(  -90deg ) translateZ( 225px );
-      -ms-transform: rotateX(  -90deg ) translateZ( 225px );
-       -o-transform: rotateX(  -90deg ) translateZ( 225px );
-          transform: rotateX(  -90deg ) translateZ( 225px );
+  -webkit-transform: rotateX(  -90deg ) translateZ( 50px );
+     -moz-transform: rotateX(  -90deg ) translateZ( 50px );
+      -ms-transform: rotateX(  -90deg ) translateZ( 50px );
+       -o-transform: rotateX(  -90deg ) translateZ( 50px );
+          transform: rotateX(  -90deg ) translateZ( 50px );
 
 }
 
