@@ -1,11 +1,14 @@
 (function() {
-  var bgindex, bgs;
+  var bgindex, bgs, bgurl, img;
 
-  $("nav a").click(function() {
-    var dir;
-    dir = $($(this).attr("href")).attr("class");
-    return $("#box").removeClass().addClass("show-" + dir);
-  });
+  if (Modernizr.csstransforms3d) {
+    $("nav a").click(function() {
+      var dir;
+      dir = $($(this).attr("href")).attr("class");
+      $("#box").removeClass().addClass("show-" + dir);
+      return false;
+    });
+  }
 
   $("#gallery a").click(function() {
     var img, parent;
@@ -21,8 +24,21 @@
 
   bgs = [1, 2, 3, 7];
 
-  bgindex = [1, 2, 3, 7][Math.floor(Math.random() * bgs.length)];
+  bgindex = bgs[Math.floor(Math.random() * bgs.length)];
 
-  $("html").css("background-image", "url(/images/gallery/" + bgindex + ".jpg)");
+  bgurl = "/images/gallery/" + bgindex + ".jpg";
+
+  if (Modernizr.backgroundsize) {
+    $("html").css("background-image", "url(" + bgurl + ")");
+  } else {
+    alert("raww");
+    img = $("<img>").attr("src", bgurl).css({
+      "width": "100%",
+      "position": "fixed",
+      "top": "0",
+      "left": "0"
+    });
+    $("body").prepend(img);
+  }
 
 }).call(this);

@@ -4,14 +4,24 @@ $boxDepth: 700px;
 $borders: 0px;
 
 html.no-csstransforms3d {
+  nav {
+    z-index: 4;
+  }
+  #box {
+    position: relative;
+    z-index: 3;
+  }
   #box section {
     float: left;
     width: 700px;
-    background-color: #333;
+    background-color: #111;
   }
   #social-media {
+    margin-top: 0px;
+    z-index: 3;
+    clear: left;
     background-color: #111;
-    position: static;
+    position: relative;
     float: left;
   }
 }
@@ -20,7 +30,7 @@ html.csstransforms3d {
   .container {
     width: $boxWidth;
     height: $boxHeight;
-    position: absolute;
+    position: fixed;
     -webkit-perspective: 1200px;
        -moz-perspective: 1200px;
         -ms-perspective: 1200px;

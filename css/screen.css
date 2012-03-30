@@ -241,19 +241,27 @@ a {
   a:hover {
     color: #05486a; }
 
+html.no-csstransforms3d nav {
+  z-index: 4; }
+html.no-csstransforms3d #box {
+  position: relative;
+  z-index: 3; }
 html.no-csstransforms3d #box section {
   float: left;
   width: 700px;
-  background-color: #333; }
+  background-color: #111; }
 html.no-csstransforms3d #social-media {
+  margin-top: 0px;
+  z-index: 3;
+  clear: left;
   background-color: #111;
-  position: static;
+  position: relative;
   float: left; }
 
 html.csstransforms3d .container {
   width: 700px;
   height: 500px;
-  position: absolute;
+  position: fixed;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
@@ -395,7 +403,7 @@ nav {
 #social-media {
   padding: 10px 20px;
   float: left;
-  margin-top: 250px;
+  margin-top: 200px;
   margin-bottom: 30px; }
 
 div[role=main] {
@@ -450,6 +458,7 @@ html {
   -moz-background-size: cover; }
 
 body {
+  background-color: #000;
   color: white; }
 
 nav {

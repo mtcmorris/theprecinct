@@ -1,6 +1,8 @@
-$("nav a").click ->
-  dir = $($(this).attr("href")).attr("class")
-  $("#box").removeClass().addClass("show-#{dir}")
+if Modernizr.csstransforms3d
+  $("nav a").click ->
+    dir = $($(this).attr("href")).attr("class")
+    $("#box").removeClass().addClass("show-#{dir}")
+    false
 
 $("#gallery a").click ->
   img = $("<img>").attr("src", $(this).attr("href")).click ->
@@ -12,5 +14,15 @@ $("#gallery a").click ->
   false
 
 bgs = [1,2,3,7]
-bgindex = [1, 2, 3, 7][Math.floor(Math.random() * bgs.length)]
-$("html").css("background-image","url(/images/gallery/#{bgindex}.jpg)")
+bgindex = bgs[Math.floor(Math.random() * bgs.length)]
+bgurl = "/images/gallery/#{bgindex}.jpg"
+if Modernizr.backgroundsize
+  $("html").css("background-image","url(#{bgurl})")
+else
+  alert "raww"
+  img = $("<img>").attr("src", bgurl).css
+    "width": "100%"
+    "position": "fixed"
+    "top": "0"
+    "left": "0"
+  $("body").prepend img
