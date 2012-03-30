@@ -271,7 +271,8 @@ body {
 }
 
 a {
-  color: #069;
+  font-weight: bold;
+  color: lighten(#069, 10);
   text-decoration: none;
   &:hover { color: #05486a; }
 }

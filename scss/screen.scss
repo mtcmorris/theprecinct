@@ -6,7 +6,7 @@
 
 html {
   height: 100%;
-  background: url("/images/bg.jpg") no-repeat center center fixed;
+  background: no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15,7 +15,6 @@ html {
 
 body {
   color: white;
-  overflow: hidden;
 }
 
 // Sidebar nav
@@ -23,9 +22,11 @@ nav {
   background-color: rgba(0,0,0,0.4);
   font-size: 30px;
   ul li a {
+    font-weight: normal;
     display: block;
     position: relative;
-    padding: 5px 0px 5px 40px;
+    padding-left: 40px;
+    line-height: 30px;
     color: #fff;
     span {
       background: transparent url(/images/arrow.png) no-repeat top left;
@@ -34,7 +35,7 @@ nav {
       height: 20px;
       width: 20px;
       left: -20px;
-      top: 0px;
+      top: 5px;
       display: block;
       -webkit-transition: left 0.2s ease-in, opacity 0.1s ease-in;
     }
@@ -91,6 +92,9 @@ h3 { margin-bottom: 16px; }
     clear: right;
     font-weight: normal;
     padding: 4px 0px;
+  }
+  a {
+    text-shadow: 1px 1px 1px black;
   }
 
   #contact {

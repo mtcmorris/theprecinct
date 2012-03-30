@@ -10,3 +10,7 @@ $("#gallery a").click ->
   img.appendTo $("#gallery")
   $("#gallery ul").hide()
   false
+
+bgs = [1,2,3,7]
+bgindex = [1, 2, 3, 7][Math.floor(Math.random() * bgs.length)]
+$("html").css("background-image","url(/images/gallery/#{bgindex}.jpg)")
