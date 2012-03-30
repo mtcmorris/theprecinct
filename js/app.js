@@ -31,7 +31,6 @@
   if (Modernizr.backgroundsize) {
     $("html").css("background-image", "url(" + bgurl + ")");
   } else {
-    alert("raww");
     img = $("<img>").attr("src", bgurl).css({
       "width": "100%",
       "position": "fixed",
