@@ -58,12 +58,12 @@ $borders: 0px;
 }
 
 
-#box .front  { background-color: #111; }
-#box .back   { background-color: #282626; }
-#box .right  { background-color: #2f3031; }
-#box .left   { background-color: #28292d; }
-#box .top    { background-color: #3e4345; }
-#box .bottom { background-color: #373d3f; }
+#box .front  { background-color: rgba(0,0,0,0.6); }
+#box .back   { background-color: rgba(0,0,0,0.6); }
+#box .right  { background-color: rgba(0,0,0,0.6); }
+#box .left   { background-color: rgba(0,0,0,0.6); }
+#box .top    { background-color: rgba(0,0,0,0.6); }
+#box .bottom { background-color: rgba(0,0,0,0.6); }
 
 #box .front  {
   -webkit-transform: translateZ( $boxDepth / 2 );
