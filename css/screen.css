@@ -261,7 +261,7 @@ html.no-csstransforms3d #social-media {
 html.csstransforms3d .container {
   width: 700px;
   height: 500px;
-  position: fixed;
+  position: absolute;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
@@ -450,6 +450,16 @@ footer {
   #gallery > img {
     height: 100%; }
 
+@media only screen and (max-device-width: 419px) {
+  #social-media {
+    display: none; }
+
+  div[role="main"] {
+    left: 10px;
+    top: 150px; }
+
+  footer {
+    display: none; } }
 html {
   height: 100%;
   background: no-repeat center center fixed;

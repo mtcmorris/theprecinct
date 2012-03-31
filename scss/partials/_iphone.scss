@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 419px) {
+  #social-media {
+    display:none;
+  }
+  div[role="main"] {
+    left: 10px;
+    top: 150px;
+  }
+  footer {
+    display: none;
+  }
+}

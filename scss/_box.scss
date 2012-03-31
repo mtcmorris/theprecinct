@@ -30,7 +30,7 @@ html.csstransforms3d {
   .container {
     width: $boxWidth;
     height: $boxHeight;
-    position: fixed;
+    position: absolute;
     -webkit-perspective: 1200px;
        -moz-perspective: 1200px;
         -ms-perspective: 1200px;
