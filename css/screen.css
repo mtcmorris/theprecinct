@@ -548,25 +548,30 @@ h3 {
     #home #contact li.email {
       background-position: 0px -100px; }
 
-#menu .col-one {
+section.menu-items .col-one {
   width: 300px; }
-#menu ul {
+section.menu-items ul {
   background: transparent url(/images/arrow.png) no-repeat top left;
   margin-left: 0px;
   padding-left: 35px;
   margin-bottom: 20px; }
-#menu li {
+section.menu-items li {
   list-style-type: none;
   font-size: 12px;
   clear: both; }
-  #menu li span {
+  section.menu-items li.header {
+    font-weight: bold;
+    margin-bottom: 1em; }
+  section.menu-items li span {
     float: right; }
-#menu p {
+section.menu-items p {
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 1em; }
+section.menu-items p.foot {
   padding-top: 40px;
   clear: both;
-  font-size: 11px;
-  text-align: center;
-  font-style: italic; }
+  text-align: center; }
 
 #social-media {
   background-color: rgba(0, 0, 0, 0.3);
