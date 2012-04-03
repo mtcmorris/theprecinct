@@ -118,6 +118,28 @@ h3 { margin-bottom: 16px; }
   }
 }
 
+#menu {
+  .col-one { width: 300px; }
+  ul {
+    background: transparent url(/images/arrow.png) no-repeat top left;
+    margin-left: 0px;
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
+  li {
+    list-style-type: none; font-size: 12px;
+    span { float: right; }
+    clear: both;
+  }
+  p {
+    padding-top: 40px;
+    clear: both;
+    font-size: 11px;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
 #social-media {
   background-color: rgba(0,0,0, 0.3);
   color: #ddd;
