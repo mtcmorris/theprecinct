@@ -553,9 +553,14 @@ section.menu-items .col-one {
 section.menu-items ul {
   background: transparent url(/images/arrow.png) no-repeat top left;
   margin-left: 0px;
-  padding-left: 35px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-left: 35px; }
 section.menu-items li {
+  float: left;
+  width: 205px;
+  padding-right: 60px;
+  position: relative;
   list-style-type: none;
   font-size: 12px;
   clear: both; }
@@ -563,7 +568,11 @@ section.menu-items li {
     font-weight: bold;
     margin-bottom: 1em; }
   section.menu-items li span {
-    float: right; }
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    section.menu-items li span.glass {
+      right: 30px; }
 section.menu-items p {
   font-size: 11px;
   font-style: italic;

@@ -123,16 +123,28 @@ section.menu-items {
   ul {
     background: transparent url(/images/arrow.png) no-repeat top left;
     margin-left: 0px;
-    padding-left: 35px;
     margin-bottom: 20px;
+    overflow: hidden;
+    padding-left: 35px;
   }
   li {
     &.header {
       font-weight: bold;
       margin-bottom: 1em;
     }
+    float: left;
+    width: 205px;
+    padding-right: 60px;
+    position: relative;
     list-style-type: none; font-size: 12px;
-    span { float: right; }
+    span {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      &.glass { right: 30px; }
+    }
+
+
     clear: both;
   }
   p {
