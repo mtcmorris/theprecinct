@@ -5,6 +5,4 @@ guard 'coffeescript', :output => 'js/' do
   watch(%r{coffee/(.+\.coffee)})
 end
 
-guard 'sass', :output => 'css/' do
-  watch(%r{scss/(.+\.scss)})
-end
+guard 'sass', :input => "scss", :output => 'css/'
