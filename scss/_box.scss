@@ -1,5 +1,5 @@
 $boxWidth: 700px;
-$boxHeight: 500px;
+$boxHeight: 530px;
 $boxDepth: 700px;
 $borders: 0px;
 
@@ -13,7 +13,6 @@ html.no-csstransforms3d {
   }
   #box section {
     float: left;
-    width: 700px;
     background-color: #111;
   }
   #social-media {
@@ -78,7 +77,7 @@ html.csstransforms3d {
   #box .bottom {
     width: $boxWidth - 2 * $borders;
     height: $boxDepth - 2 * $borders;
-    top: ($boxWidth - $boxHeight)/2;
+    top: -($boxWidth - $boxHeight)/2;
   }
 
 
@@ -123,24 +122,25 @@ html.csstransforms3d {
         -ms-transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
          -o-transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
             transform: rotateX(   90deg ) translateZ( $boxHeight / 2 );
-    -webkit-transform: rotateX(   90deg ) translateZ( 450px );
-       -moz-transform: rotateX(   90deg ) translateZ( 450px );
-        -ms-transform: rotateX(   90deg ) translateZ( 450px );
-         -o-transform: rotateX(   90deg ) translateZ( 450px );
-            transform: rotateX(   90deg ) translateZ( 450px );
+    // -webkit-transform: rotateX(   90deg ) translateZ( 435px );
+    //    -moz-transform: rotateX(   90deg ) translateZ( 435px );
+    //     -ms-transform: rotateX(   90deg ) translateZ( 435px );
+    //      -o-transform: rotateX(   90deg ) translateZ( 435px );
+    //         transform: rotateX(   90deg ) translateZ( 435px );
 
   }
   #box .bottom {
+
     -webkit-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
        -moz-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
         -ms-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
          -o-transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
             transform: rotateX(  -90deg ) translateZ( $boxHeight / 2 );
-    -webkit-transform: rotateX(  -90deg ) translateZ( 50px );
-       -moz-transform: rotateX(  -90deg ) translateZ( 50px );
-        -ms-transform: rotateX(  -90deg ) translateZ( 50px );
-         -o-transform: rotateX(  -90deg ) translateZ( 50px );
-            transform: rotateX(  -90deg ) translateZ( 50px );
+    // -webkit-transform: rotateX(  -90deg ) translateZ( 95px );
+    //    -moz-transform: rotateX(  -90deg ) translateZ( 95px );
+    //     -ms-transform: rotateX(  -90deg ) translateZ( 95px );
+    //      -o-transform: rotateX(  -90deg ) translateZ( 95px );
+    //         transform: rotateX(  -90deg ) translateZ( 95px );
 
   }
 

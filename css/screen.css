@@ -248,7 +248,6 @@ html.no-csstransforms3d #box {
   z-index: 3; }
 html.no-csstransforms3d #box section {
   float: left;
-  width: 700px;
   background-color: #111; }
 html.no-csstransforms3d #social-media {
   margin-top: 0px;
@@ -260,7 +259,7 @@ html.no-csstransforms3d #social-media {
 
 html.csstransforms3d .container {
   width: 700px;
-  height: 500px;
+  height: 530px;
   position: absolute;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
@@ -288,17 +287,17 @@ html.csstransforms3d #box section {
 html.csstransforms3d #box .front,
 html.csstransforms3d #box .back {
   width: 700px;
-  height: 500px; }
+  height: 530px; }
 html.csstransforms3d #box .right,
 html.csstransforms3d #box .left {
   width: 700px;
-  height: 500px;
+  height: 530px;
   left: 0px; }
 html.csstransforms3d #box .top,
 html.csstransforms3d #box .bottom {
   width: 700px;
   height: 700px;
-  top: 100px; }
+  top: -85px; }
 html.csstransforms3d #box .front {
   background-color: rgba(0, 0, 0, 0.6); }
 html.csstransforms3d #box .back {
@@ -336,27 +335,17 @@ html.csstransforms3d #box .left {
   -o-transform: rotateY(-90deg) translateZ(350px);
   transform: rotateY(-90deg) translateZ(350px); }
 html.csstransforms3d #box .top {
-  -webkit-transform: rotateX(90deg) translateZ(250px);
-  -moz-transform: rotateX(90deg) translateZ(250px);
-  -ms-transform: rotateX(90deg) translateZ(250px);
-  -o-transform: rotateX(90deg) translateZ(250px);
-  transform: rotateX(90deg) translateZ(250px);
-  -webkit-transform: rotateX(90deg) translateZ(450px);
-  -moz-transform: rotateX(90deg) translateZ(450px);
-  -ms-transform: rotateX(90deg) translateZ(450px);
-  -o-transform: rotateX(90deg) translateZ(450px);
-  transform: rotateX(90deg) translateZ(450px); }
+  -webkit-transform: rotateX(90deg) translateZ(265px);
+  -moz-transform: rotateX(90deg) translateZ(265px);
+  -ms-transform: rotateX(90deg) translateZ(265px);
+  -o-transform: rotateX(90deg) translateZ(265px);
+  transform: rotateX(90deg) translateZ(265px); }
 html.csstransforms3d #box .bottom {
-  -webkit-transform: rotateX(-90deg) translateZ(250px);
-  -moz-transform: rotateX(-90deg) translateZ(250px);
-  -ms-transform: rotateX(-90deg) translateZ(250px);
-  -o-transform: rotateX(-90deg) translateZ(250px);
-  transform: rotateX(-90deg) translateZ(250px);
-  -webkit-transform: rotateX(-90deg) translateZ(50px);
-  -moz-transform: rotateX(-90deg) translateZ(50px);
-  -ms-transform: rotateX(-90deg) translateZ(50px);
-  -o-transform: rotateX(-90deg) translateZ(50px);
-  transform: rotateX(-90deg) translateZ(50px); }
+  -webkit-transform: rotateX(-90deg) translateZ(265px);
+  -moz-transform: rotateX(-90deg) translateZ(265px);
+  -ms-transform: rotateX(-90deg) translateZ(265px);
+  -o-transform: rotateX(-90deg) translateZ(265px);
+  transform: rotateX(-90deg) translateZ(265px); }
 html.csstransforms3d #box.show-front {
   -webkit-transform: translateZ(-350px);
   -moz-transform: translateZ(-350px);
@@ -382,17 +371,17 @@ html.csstransforms3d #box.show-left {
   -o-transform: translateZ(-350px) rotateY(90deg);
   transform: translateZ(-350px) rotateY(90deg); }
 html.csstransforms3d #box.show-top {
-  -webkit-transform: translateZ(-250px) rotateX(-90deg);
-  -moz-transform: translateZ(-250px) rotateX(-90deg);
-  -ms-transform: translateZ(-250px) rotateX(-90deg);
-  -o-transform: translateZ(-250px) rotateX(-90deg);
-  transform: translateZ(-250px) rotateX(-90deg); }
+  -webkit-transform: translateZ(-265px) rotateX(-90deg);
+  -moz-transform: translateZ(-265px) rotateX(-90deg);
+  -ms-transform: translateZ(-265px) rotateX(-90deg);
+  -o-transform: translateZ(-265px) rotateX(-90deg);
+  transform: translateZ(-265px) rotateX(-90deg); }
 html.csstransforms3d #box.show-bottom {
-  -webkit-transform: translateZ(-250px) rotateX(90deg);
-  -moz-transform: translateZ(-250px) rotateX(90deg);
-  -ms-transform: translateZ(-250px) rotateX(90deg);
-  -o-transform: translateZ(-250px) rotateX(90deg);
-  transform: translateZ(-250px) rotateX(90deg); }
+  -webkit-transform: translateZ(-265px) rotateX(90deg);
+  -moz-transform: translateZ(-265px) rotateX(90deg);
+  -ms-transform: translateZ(-265px) rotateX(90deg);
+  -o-transform: translateZ(-265px) rotateX(90deg);
+  transform: translateZ(-265px) rotateX(90deg); }
 
 nav {
   position: absolute;
